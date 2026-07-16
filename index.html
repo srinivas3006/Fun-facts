@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Fact Generator</title>
+    <title>Random Fact Generator v2.0</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons for modern UI elements -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Random Fact Generator</h1>
-        <p id="fact">Click the button to see a random fact!</p>
-        <button id="generateFactBtn">Generate Fact</button>
-    </div>
+
+    <main class="card">
+        <header class="card-header">
+            <i data-lucide="sparkles" class="icon-sparkle"></i>
+            <h1>Did You Know?</h1>
+        </header>
+
+        <section class="fact-container">
+            <p id="fact-text">Click the button below to discover something fascinating!</p>
+        </section>
+
+        <footer class="card-actions">
+            <button id="copy-btn" class="btn btn-secondary" title="Copy fact to clipboard" disabled>
+                <i data-lucide="copy"></i>
+            </button>
+            <button id="generate-btn" class="btn btn-primary">
+                <span>Generate Fact</span>
+                <i data-lucide="arrow-right"></i>
+            </button>
+        </footer>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
