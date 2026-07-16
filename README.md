@@ -1,50 +1,24 @@
-# Random Fact Generator
+# Random Fact Generator v2.0
 
-A simple single-page web application that generates random facts at the click of a button.
+A modern, responsive single-page web application that fetches and displays fascinating random facts in real time using a live REST API.
 
 ## Description
 
-This web application consists of a clean, user-friendly interface that displays random facts when users click a button. The application is built using [HTML], [CSS], and [JavaScript].
+Version 2.0 upgrades this project from a static, hardcoded list of text into a dynamic, production-ready web application. It connects to a public API via asynchronous JavaScript, introduces a "Copy to Clipboard" feature, and boasts a clean, dark-mode glassmorphism interface. 
 
 ## Features
 
-- Simple and intuitive user interface
-- Responsive design
-- Random fact generation
-- Smooth hover effects on button
-- Mobile-friendly layout
+- **Live API Integration:** Dynamically fetches thousands of random facts from an external API (`uselessfacts.jsph.pl`).
+- **One-Click Copy:** Seamlessly copy your favorite facts to the clipboard using the modern Web Clipboard API.
+- **Async Safety:** Buttons automatically lock into a loading state during API calls to prevent multi-click spam.
+- **Glassmorphic UI Design:** A sleek, dark-themed layout built with responsive CSS flexbox variables and blur filters.
+- **Modern Iconography:** Clean vector icon integrations powered by the Lucide icon set.
 
 ## Project Structure
 
+```text
 random-fact-generator/
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
-
-
-## Installation
-
-1. Clone or download this repository to your local machine.
-2. Open the `index.html` file in a web browser.
-
-## Usage
-
-Simply click the "Generate Fact" button to display a new random fact from the collection.
-
-## Technologies Used
-
-- [HTML5]
-- [CSS3]
-- [JavaScript]
-
-## Customization
-
-To add or modify facts, edit the `facts` array in the `script.js` file:
-
-```javascript
-const facts = [
-    "Your fact 1",
-    "Your fact 2",
-    // Add more facts here
-];
